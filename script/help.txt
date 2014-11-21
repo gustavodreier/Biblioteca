@@ -1,0 +1,2 @@
+#biblioteca.sql
+Script de criacao do banco de dados da biblioteca
