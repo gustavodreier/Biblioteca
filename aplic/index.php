@@ -4,10 +4,8 @@ var a = document.getElementById('tipo').value;
 var b = document.getElementById('tabela').value;
 //b = a.options[a.selectedIndex].value;
 var url = "";
-if (b == "exame_paciente") {
-alert("Ainda não implementado");
-} else if (a == "cadastro" || a == "atualizar") {
-url = './controller/cadastro_' + b +'.php';
+if (a == "cadastro" || a == "atualizar") {
+url = 'incluir.php?tabela=' + b;
 } else if (a == "consulta" || a == "remover") {//ainda nao pensado como vai ficar
 url = './controller/' + a + '.php?tabela=' + b;
 } else {
@@ -38,10 +36,16 @@ document.formulario.submit();
 -->
 </select>
 <select id="tabela">
-<option value="medico">Medico</option>
-<option value="paciente">Paciente</option>
-<option value="exame">Exame</option>
-<option value="exame_paciente">Exame do paciente</option>
+<option value="pessoa">Pessoa</option>
+<option value="genero">Genero</option>
+<option value="titulo">Titulo</option>
+<option value="autor">Autor</option>
+<option value="autor_do_titulo">Autor do Titulo</option>
+<option value="genero_do_titulo">Genero do Titulo</option>
+<option value="livro">Livro</option>
+<option value="emprestimo">Emprestimo</option>
+<option value="bibliotecario">Bibliotecario</option>
+<option value="multa">Multa</option>
 <!--
 <option value=""></option>
 <option value=""></option>
