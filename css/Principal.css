@@ -1,0 +1,19 @@
+@media(max-width: 767px) {
+    input {
+        text-align: center;
+    }
+}
+body {
+    background: url("../images/library.jpg");
+    background-size: 100%;
+}
+.jumbotron {
+    background-color: rgba(254, 254, 254, 0.85);
+}
+
+.main-header {
+    background-color: rgba(51, 121, 182, 0.85);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
