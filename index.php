@@ -1,6 +1,9 @@
 <?php
 require('include/conexao.php');
 session_start();
+if(!isset($_SESSION['name'])) 
+	//Se nao existir uma sessao ativa redireciona para o login
+        header("Location: login.php");
 ?>
 <head>
 	<title>Página inicial</title>

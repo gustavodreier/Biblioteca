@@ -13,7 +13,7 @@ rg int (10) NOT NULL,
 telefone int (12),
 endereco varchar (75),
 cidade varchar (25),
-tipo int(1);
+tipo int(1),
 CONSTRAINT pk_pessoa PRIMARY KEY (id),
 UNIQUE KEY uk_pessoa_rg (email),
 UNIQUE KEY uk_pessoa_email (email));
