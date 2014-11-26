@@ -3,6 +3,8 @@ use biblioteca;
 grant all privileges on biblioteca.* to usuario@'localhost' IDENTIFIED BY 'senha';
 flush privileges;
 
+/*tipo = 0,bibliotecario;1,cliente*/
+
 CREATE TABLE pessoa (
 id int(10) NOT NULL auto_increment,
 nome varchar (50) NOT NULL,
@@ -11,16 +13,11 @@ rg int (10) NOT NULL,
 telefone int (12),
 endereco varchar (75),
 cidade varchar (25),
+tipo int(1);
 CONSTRAINT pk_pessoa PRIMARY KEY (id),
 UNIQUE KEY uk_pessoa_rg (email),
 UNIQUE KEY uk_pessoa_email (email));
 
-/*
-Embora a relação seja 1:1 com a tabela user, será usada outra tabela para
-otimizar as consultas
-
-usuario = email
-*/
 CREATE TABLE login (
 usuario varchar (50) NOT NULL,
 pass varchar (30) NOT NULL,
@@ -80,12 +77,6 @@ data_devolucao date,
 FOREIGN KEY (id_pessoa) REFERENCES pessoa(id),
 FOREIGN KEY (id_livro) REFERENCES livro(id),
 CONSTRAINT pk_emprestimo PRIMARY KEY (id));
-
-CREATE TABLE bibliotecario (
-id int(2) NOT NULL auto_increment,
-id_pessoa int(10) NOT NULL,
-CONSTRAINT pk_bibliotecario PRIMARY KEY (id),
-FOREIGN KEY (id_pessoa) REFERENCES pessoa(id));
 
 CREATE TABLE multa (
 id_pessoa int(10) NOT NULL,

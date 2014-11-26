@@ -1,5 +1,4 @@
 <?php
-@SESSION_START();
         // mensagens de erro
 $msg[0] = " Conexao com o banco falhou!";
 $msg[1] = "Nao foi possivel selecionar o banco de dados!";
