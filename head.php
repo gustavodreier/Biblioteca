@@ -66,18 +66,18 @@
 		<div id="m1"
 			onmouseover="mcancelclosetime()"
 			onmouseout="mclosetime()">
-			<a href="http://localhost:8080/Biblioteca/aplic/cadastra_autor.php">Autor</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/incluir.php?tabela=emprestimo">Emprestimo</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/cadastra_genero.php">Genero</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/incluir.php?tabela=livro">Livro</a>
+			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_autor.php">Autor</a>
+			<!--<a href="http://localhost:8080/Biblioteca/aplic/incluir.php?tabela=emprestimo">Emprestimo</a>-->
+			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_genero.php">Genero</a>
+			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_livro.php">Livro</a>
 			<!--
 			<a href="aplic/incluir.php?tabela=">Gênero do título</a>
 			<a href="aplic/incluir.php?tabela=autor_do_titulo">Autor do título</a>
 			<a href="#">LOGIN</a>
 			<a href="#">MULTA</a>
 			-->
-			<a href="http://localhost:8080/Biblioteca/aplic/incluir.php?tabela=pessoa">Pessoa</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/cadastra_titulo.php">Título</a>
+			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_pessoa.php">Pessoa</a>
+			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_titulo.php">Título</a>
 		</div>
 	</li>
 	<li><a href="#"
@@ -90,7 +90,7 @@
 			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=emprestimo">Emprestimo</a>
 			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=genero">Genero</a>
 			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=livro">Livro</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=login">Senha</a>
+			<a href="http://localhost:8080/Biblioteca/altera/altera_senha.php">Senha</a>
 			<!--
 			<a href="aplic/alterar.php?tabela=">Gênero do título</a>
 			<a href="aplic/alterar.php?tabela=autor_do_titulo">Autor do título</a>

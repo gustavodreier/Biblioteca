@@ -2,7 +2,7 @@
 	include("../head.php");
 
 ?>
-	<form action="valida_cadastro_autor.php" method="post">
+	<form action="incluir_autor.php" method="post">
 	<h3>Preencha os campos abaixo</h3>
 
 	<div>

@@ -3,7 +3,7 @@
 
 ?>
 	<div>
-		<form action="valida_cadastro_autor.php" method="post">
+		<form action="incluir_genero.php" method="post">
 		<h3>Preencha os campos abaixo</h3>
 		Nome do Gênero:<input name="nome" size="20" maxlenght="20" type="text"/>
 		Descrição:<input name="desc" size="31" maxlenght="100" type="text"/>

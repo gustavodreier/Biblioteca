@@ -17,14 +17,11 @@ require('../include/conexao.php');
 		$valido == FALSE;
 	
 	if ($valido) {
-		$query = "INSERT INTO autor (nome, descricao) VALUES ('".$nome."','".$desc."')";
+		$query = "INSERT INTO genero (nome, descricao) VALUES ('".$nome."','".$desc."')";
+		$consulta = mysql_query($query) or die(mysql_error());
+	
+		echo "Dados inseridos com sucesso!!!";
 	}
 	
-	
-	$consulta = mysql_query($query) or die(mysql_error());
-	
-	echo "Dados inseridos com sucesso!!!";
-
 	include("../tail.php");
 ?>
-

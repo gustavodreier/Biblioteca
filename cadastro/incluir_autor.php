@@ -24,7 +24,6 @@ require('../include/conexao.php');
 	
 	echo "Dados inseridos com sucesso!!!";
 
+	
+	include("../tail.php");
 ?>
-
-</body>
-</html>
