@@ -25,7 +25,7 @@
 		<p>Endereço:<input name="endereco" size="20" maxlenght="20" type="text"/>
 		<p>Cidade:<input name="cidade" size="20" maxlenght="20" type="text"/>
 		<p>Tipo de usuario:<select name="tipo">
-			<option value="0">Usuario</option>
+			<option value="1">Usuario</option>
 			<option value="0">Bibliotecario</option>
 		</select>
 		

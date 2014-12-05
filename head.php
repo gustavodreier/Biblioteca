@@ -112,8 +112,8 @@ for ($i=0;$i < $aux;$i++) {
 			
 			<a href="#">MULTA</a>
 			-->
-			<a href="<?php echo $path ?>altera/pessoa">Pessoa</a>
-			<a href="<?php echo $path ?>altera/pessoa">Título</a>
+			<a href="<?php echo $path ?>altera/altera_pessoa.php">Pessoa</a>
+			<a href="<?php echo $path ?>altera/altera_titulo.php">Título</a>
 		</div>
 	</li>
 	<li><a href="#"
