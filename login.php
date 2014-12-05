@@ -1,8 +1,24 @@
+<?php
+
+$root = $_SERVER['DOCUMENT_ROOT']."/Biblioteca";
+//descobre caminho relativo
+$dir = str_replace($root, "", getcwd());
+$path = "";
+//contao numero de pastas de distancia da raiz
+$aux = substr_count($dir, '/');
+for ($i=0;$i < $aux;$i++) {
+		$path .= "../";
+}
+
+
+
+?>
+
 <html>
 <head>
 	<title>Página de login</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/Biblioteca/style_login.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>/style_login.css">
 <head>
 <?php
 

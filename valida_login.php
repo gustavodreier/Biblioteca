@@ -1,5 +1,10 @@
 <?php
-	require("include/conexao.php");
+
+$root = $_SERVER['DOCUMENT_ROOT']."/Biblioteca";
+$path = str_replace($root, "", getcwd()).".";
+
+
+	require($path."/include/conexao.php");
 	session_start();
 	if (($_POST['usuario'] == "") || ($_POST['pass'] == "")) {
 		print("Preencha todos os campos!<br/>");

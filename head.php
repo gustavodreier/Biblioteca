@@ -1,8 +1,23 @@
+<?php
+
+$root = $_SERVER['DOCUMENT_ROOT']."/Biblioteca";
+//descobre caminho relativo
+$dir = str_replace($root, "", getcwd());
+$path = "";
+//contao numero de pastas de distancia da raiz
+$aux = substr_count($dir, '/');
+for ($i=0;$i < $aux;$i++) {
+		$path .= "../";
+}
+
+?>
+
+
 <html>
 <head>
 	<title>Página inicial</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/Biblioteca/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $path ?>style.css">
 	<script>
 	
 	// Copyright 2006-2007 javascript-array.com
@@ -66,18 +81,18 @@
 		<div id="m1"
 			onmouseover="mcancelclosetime()"
 			onmouseout="mclosetime()">
-			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_autor.php">Autor</a>
-			<!--<a href="http://localhost:8080/Biblioteca/aplic/incluir.php?tabela=emprestimo">Emprestimo</a>-->
-			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_genero.php">Genero</a>
-			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_livro.php">Livro</a>
+			<a href="<?php echo $path ?>cadastro/cadastra_autor.php">Autor</a>
+			<!--<a href="<?php echo $path ?>/aplic/incluir.php?tabela=emprestimo">Emprestimo</a>-->
+			<a href="<?php echo $path ?>cadastro/cadastra_genero.php">Genero</a>
+			<a href="<?php echo $path ?>cadastro/cadastra_livro.php">Livro</a>
 			<!--
 			<a href="aplic/incluir.php?tabela=">Gênero do título</a>
 			<a href="aplic/incluir.php?tabela=autor_do_titulo">Autor do título</a>
 			<a href="#">LOGIN</a>
 			<a href="#">MULTA</a>
 			-->
-			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_pessoa.php">Pessoa</a>
-			<a href="http://localhost:8080/Biblioteca/cadastro/cadastra_titulo.php">Título</a>
+			<a href="<?php echo $path ?>cadastro/cadastra_pessoa.php">Pessoa</a>
+			<a href="<?php echo $path ?>cadastro/cadastra_titulo.php">Título</a>
 		</div>
 	</li>
 	<li><a href="#"
@@ -86,19 +101,19 @@
 		<div id="m2"
 			onmouseover="mcancelclosetime()"
 			onmouseout="mclosetime()">
-			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=autor">Autor</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=emprestimo">Emprestimo</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=genero">Genero</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=livro">Livro</a>
-			<a href="http://localhost:8080/Biblioteca/altera/altera_senha.php">Senha</a>
+			<a href="<?php echo $path ?>aplic/alterar.php?tabela=autor">Autor</a>
+			<a href="<?php echo $path ?>aplic/alterar.php?tabela=emprestimo">Emprestimo</a>
+			<a href="<?php echo $path ?>aplic/alterar.php?tabela=genero">Genero</a>
+			<a href="<?php echo $path ?>aplic/alterar.php?tabela=livro">Livro</a>
+			<a href="<?php echo $path ?>altera/altera_senha.php">Senha</a>
 			<!--
 			<a href="aplic/alterar.php?tabela=">Gênero do título</a>
 			<a href="aplic/alterar.php?tabela=autor_do_titulo">Autor do título</a>
 			
 			<a href="#">MULTA</a>
 			-->
-			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=pessoa">Pessoa</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/alterar.php?tabela=titulo">Título</a>
+			<a href="<?php echo $path ?>aplic/alterar.php?tabela=pessoa">Pessoa</a>
+			<a href="<?php echo $path ?>aplic/alterar.php?tabela=titulo">Título</a>
 		</div>
 	</li>
 	<li><a href="#"
@@ -112,14 +127,14 @@
 			<a href="aplic/excluir.php?tabela=emprestimo">Emprestimo</a>
 			<a href="aplic/excluir.php?tabela=genero">Genero</a>
 			-->
-			<a href="http://localhost:8080/Biblioteca/aplic/excluir.php?tabela=livro">Livro</a>
+			<a href="<?php echo $path ?>aplic/excluir.php?tabela=livro">Livro</a>
 			<!--
 			<a href="aplic/excluir.php?tabela=">Gênero do título</a>
 			<a href="aplic/excluir.php?tabela=autor_do_titulo">Autor do título</a>
 			<a href="#">LOGIN</a>
 			<a href="#">MULTA</a>
 			-->
-			<a href="http://localhost:8080/Biblioteca/aplic/excluir.php?tabela=pessoa">Pessoa</a>
+			<a href="<?php echo $path ?>aplic/excluir.php?tabela=pessoa">Pessoa</a>
 			<!--
 			<a href="aplic/excluir.php?tabela=titulo">Título</a>
 			-->
@@ -131,20 +146,20 @@
 		<div id="m4"
 			onmouseover="mcancelclosetime()"
 			onmouseout="mclosetime()">
-			<a href="http://localhost:8080/Biblioteca/aplic/consultar.php?tabela=autor">Autor</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/consultar.php?tabela=emprestimo">Emprestimo</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/consultar.php?tabela=genero">Genero</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/consultar.php?tabela=livro">Livro</a>
+			<a href="<?php echo $path ?>aplic/consultar.php?tabela=autor">Autor</a>
+			<a href="<?php echo $path ?>aplic/consultar.php?tabela=emprestimo">Emprestimo</a>
+			<a href="<?php echo $path ?>aplic/consultar.php?tabela=genero">Genero</a>
+			<a href="<?php echo $path ?>aplic/consultar.php?tabela=livro">Livro</a>
 			<!--
 			<a href="aplic/consultar.php?tabela=">Gênero do título</a>
 			<a href="aplic/consultar.php?tabela=autor_do_titulo">Autor do título</a>
 			<a href="#">LOGIN</a>
 			-->
-			<a href="http://localhost:8080/Biblioteca/aplic/consultar.php?tabela=">Multa</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/consultar.php?tabela=pessoa">Pessoa</a>
-			<a href="http://localhost:8080/Biblioteca/aplic/consultar.php?tabela=titulo">Título</a>
+			<a href="<?php echo $path ?>aplic/consultar.php?tabela=">Multa</a>
+			<a href="<?php echo $path ?>aplic/consultar.php?tabela=pessoa">Pessoa</a>
+			<a href="<?php echo $path ?>aplic/consultar.php?tabela=titulo">Título</a>
 		</div>
 	</li>
-	<li><a href="http://localhost:8080/Biblioteca/deslogar.php">Deslogar</a></li>
+	<li><a href="<?php echo $path ?>deslogar.php">Deslogar</a></li>
 	</ul>
 	<div style="clear:both"></div>

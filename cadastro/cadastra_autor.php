@@ -1,4 +1,5 @@
 <?php
+
 	include("../head.php");
 
 ?>
@@ -11,5 +12,5 @@
 	</div>
 	</form>
 <?php
-include("../tail.php");
+include($path."tail.php");
 ?>
