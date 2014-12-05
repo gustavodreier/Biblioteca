@@ -101,10 +101,10 @@ for ($i=0;$i < $aux;$i++) {
 		<div id="m2"
 			onmouseover="mcancelclosetime()"
 			onmouseout="mclosetime()">
-			<a href="<?php echo $path ?>aplic/alterar.php?tabela=autor">Autor</a>
-			<a href="<?php echo $path ?>aplic/alterar.php?tabela=emprestimo">Emprestimo</a>
-			<a href="<?php echo $path ?>aplic/alterar.php?tabela=genero">Genero</a>
-			<a href="<?php echo $path ?>aplic/alterar.php?tabela=livro">Livro</a>
+			<a href="<?php echo $path ?>altera/altera_autor.php">Autor</a>
+			<!--<a href="<?php echo $path ?>altera/altera_emprestimo.php">Emprestimo</a>-->
+			<a href="<?php echo $path ?>altera/altera_genero.php">Genero</a>
+			<a href="<?php echo $path ?>altera/altera_livro.php">Livro</a>
 			<a href="<?php echo $path ?>altera/altera_senha.php">Senha</a>
 			<!--
 			<a href="aplic/alterar.php?tabela=">Gênero do título</a>
@@ -112,8 +112,8 @@ for ($i=0;$i < $aux;$i++) {
 			
 			<a href="#">MULTA</a>
 			-->
-			<a href="<?php echo $path ?>aplic/alterar.php?tabela=pessoa">Pessoa</a>
-			<a href="<?php echo $path ?>aplic/alterar.php?tabela=titulo">Título</a>
+			<a href="<?php echo $path ?>altera/pessoa">Pessoa</a>
+			<a href="<?php echo $path ?>altera/pessoa">Título</a>
 		</div>
 	</li>
 	<li><a href="#"
